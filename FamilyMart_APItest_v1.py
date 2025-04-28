@@ -7,10 +7,12 @@ import shutil
 from base64 import b64encode
 from pathlib import Path
 
+print("Current working directory:", os.getcwd())
+print("Target file exists:", os.path.exists("/mnt/data/sample.csv"))
+
 app = Flask(__name__)
 
-base_dir = r"/mnt/data"
-csv_path = os.path.join(base_dir, "sample.csv")
+csv_path = os.path.abspath("/mnt/data/sample.csv")
 
 BATCH_SIZE = 2
 
