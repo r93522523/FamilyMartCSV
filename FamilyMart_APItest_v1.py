@@ -8,11 +8,11 @@ from base64 import b64encode
 from pathlib import Path
 
 print("Current working directory:", os.getcwd())
-print("Target file exists:", os.path.exists("/mnt/data/sample.csv"))
+print("Target file exists:", os.path.exists("/opt/render/project/src/sample.csv"))
 
 app = Flask(__name__)
 
-csv_path = os.path.abspath("/mnt/data/sample.csv")
+csv_path = os.path.abspath("/opt/render/project/src/sample.csv")
 
 BATCH_SIZE = 2
 
