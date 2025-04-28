@@ -9,7 +9,7 @@ from pathlib import Path
 
 app = Flask(__name__)
 
-base_dir = r"C:\Users\vincent.hung\Desktop\FamilyMart\API"
+base_dir = r"/mnt/data"
 csv_path = os.path.join(base_dir, "sample.csv")
 
 BATCH_SIZE = 2
